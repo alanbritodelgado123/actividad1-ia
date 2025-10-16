@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IA: De la Máquina de Turing al Cerebro Digital - Una Revolución en Marcha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0da6f2",
+            "background-light": "#f5f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #0da6f2 0%, #0d8bf2 50%, #0d6ff2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(13, 166, 242, 0.3);
+    }
+    .glow-border {
+      box-shadow: 0 0 20px rgba(13, 166, 242, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Membrete Institucional -->
+    <header class="bg-gradient-to-r from-primary/10 via-primary/20 to-primary/10 dark:from-primary/20 dark:via-primary/30 dark:to-primary/20 text-center py-6 border-b-2 border-primary/50">
+      <div class="max-w-[960px] mx-auto px-4">
+        <p class="text-sm md:text-base font-semibold text-gray-900 dark:text-gray-100 whitespace-pre-line leading-relaxed">
+          República Bolivariana de Venezuela
+          Ministerio del Poder Popular para la Educación
+          Instituto Universitario Técnico Elías Calixto Pompa
+          El Tigre - Estado Anzoátegui
+        </p>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-1 py-12 px-4 md:px-10 lg:px-20 xl:px-40">
+      <div class="max-w-[960px] mx-auto">
+
+        <!-- Título Principal -->
+        <section class="text-center mb-16">
+          <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight tracking-tight mb-4">
+            IA: De la Máquina de Turing<br>al <span class="gradient-text">Cerebro Digital</span>
+          </h1>
+          <div class="h-1 w-32 bg-gradient-to-r from-primary to-blue-600 mx-auto mb-6 rounded-full"></div>
+          <p class="mt-4 text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            Un recorrido histórico, conceptual y tecnológico por la evolución de la Inteligencia Artificial, desde sus fundamentos lógicos hasta las redes neuronales profundas que impulsan el mundo moderno.
+          </p>
+        </section>
+
+        <!-- Sección 1 -->
+        <section class="mb-20">
+          <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-10 text-center">
+            <span class="material-symbols-outlined text-primary align-middle mr-3 text-5xl">psychology</span>
+            1. Panorama de la Inteligencia Artificial (IA)
+          </h2>
+
+          <!-- Definición y Origen -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 rounded-xl mb-8 flex flex-col md:flex-row gap-8 items-center glow-border card-hover">
+            <div class="md:w-3/4">
+              <h3 class="text-3xl font-bold text-primary mb-4 flex items-center">
+                <span class="material-symbols-outlined text-4xl mr-3">lightbulb</span>
+                A. Definición y Origen: La Búsqueda de la Mente Artificial
+              </h3>
+              <p class="mb-5 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                <strong class="text-primary">Definición de IA:</strong> Es la disciplina de la informática que busca crear sistemas o máquinas capaces de simular procesos de inteligencia humana, como el aprendizaje, el razonamiento, la percepción y la toma de decisiones. Representa uno de los logros científicos más ambiciosos de la humanidad: replicar la capacidad cognitiva en silicio.
+              </p>
+              <p class="mb-5 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                <strong class="text-primary">Origen Filosófico/Conceptual:</strong> El concepto se remonta a la antigua idea de autómatas y golem en diversas culturas, pero el enfoque moderno inicia con preguntas fundamentales sobre la naturaleza de la mente y la computación. Filósofos, matemáticos y científicos se preguntaron: ¿Puede una máquina pensar?
+              </p>
+              <div class="bg-primary/10 dark:bg-primary/20 p-5 rounded-lg border-l-4 border-primary">
+                <p class="italic text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <strong class="text-primary text-xl">Alan Turing (1950):</strong> Considerado el padre de la IA. Propuso la famosa <em>Prueba de Turing</em> en su artículo revolucionario "Computing Machinery and Intelligence" para determinar si una máquina podía exhibir un comportamiento inteligente indistinguible del humano. Esta prueba cambió para siempre nuestra concepción de la inteligencia artificial.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/4 flex-shrink-0">
+              <img src="1.png" alt="Alan Turing y la Prueba de Turing" class="w-full h-auto rounded-xl shadow-2xl border-4 border-primary/30"/>
+            </div>
+          </div>
+
+          <!-- Hitos Históricos -->
+          <div class="p-8 rounded-xl bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 dark:from-primary/10 dark:via-primary/20 dark:to-primary/10 border-2 border-primary/30 mb-8 flex flex-col md:flex-row-reverse gap-8 items-center glow-border card-hover">
+            <div class="md:w-3/4">
+              <h3 class="text-3xl font-bold text-primary mb-5 flex items-center">
+                <span class="material-symbols-outlined text-4xl mr-3">timeline</span>
+                B. Hitos Históricos: Los Picos y Valles de la IA
+              </h3>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
+                La historia de la IA ha sido un viaje fascinante de altas expectativas, decepciones profundas y resurgimientos espectaculares. Cada era ha contribuido con avances fundamentales:
+              </p>
+              <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+                  <strong class="text-primary text-lg">Nacimiento Formal (1956):</strong> El término "Inteligencia Artificial" fue acuñado en la histórica Conferencia de Dartmouth, donde pioneros como John McCarthy, Marvin Minsky, Allen Newell y Herbert Simon sentaron las bases conceptuales del campo.
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+                  <strong class="text-primary text-lg">Época de los Sistemas Expertos (1970s–1980s):</strong> Primeras aplicaciones prácticas comerciales, emulando la toma de decisiones de expertos humanos en dominios específicos como medicina (MYCIN) y química (DENDRAL).
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-red-500">
+                  <strong class="text-red-500 text-lg">Los "Inviernos" de la IA:</strong> Etapas de estancamiento y recorte de financiación por expectativas no cumplidas, limitaciones tecnológicas y promesas exageradas. Estos períodos forzaron a la comunidad a ser más realista.
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-green-500">
+                  <strong class="text-green-500 text-lg">El Resurgimiento – Machine Learning (1990s):</strong> El enfoque cambia radicalmente hacia el aprendizaje estadístico a partir de datos, abandonando la programación explícita de reglas.
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-blue-500">
+                  <strong class="text-blue-500 text-lg">Deep Learning (2010s–Actualidad):</strong> Redes neuronales profundas impulsadas por Big Data, GPUs de alto rendimiento y algoritmos mejorados logran avances sin precedentes en visión, lenguaje y juegos estratégicos.
+                </li>
+              </ul>
+            </div>
+            <div class="md:w-1/4 flex-shrink-0">
+              <img src="2.png" alt="Línea de tiempo de la IA" class="w-full h-auto rounded-xl shadow-2xl border-4 border-primary/30"/>
+            </div>
+          </div>
+
+          <!-- Impacto Actual -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 rounded-xl mb-8 glow-border">
+            <h3 class="text-3xl font-bold text-primary mb-5 text-center flex items-center justify-center">
+              <span class="material-symbols-outlined text-4xl mr-3">rocket_launch</span>
+              C. Impacto Actual: La IA en el Día a Día
+            </h3>
+            <p class="mb-6 text-lg text-gray-700 dark:text-gray-300 text-center leading-relaxed max-w-3xl mx-auto">
+              La IA está transformando fundamentalmente sectores clave de nuestra sociedad, mejorando la eficiencia, precisión y accesibilidad de servicios esenciales. Su impacto es transversal y revolucionario:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="p-6 bg-gradient-to-br from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 rounded-xl border-2 border-red-300/50 dark:border-red-500/30 card-hover">
+                <img src="3.png" alt="IA en Medicina" class="w-16 h-16 mb-3 mx-auto"/>
+                <h4 class="font-bold text-red-600 dark:text-red-400 mb-2 text-xl text-center">🏥 Medicina</h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Diagnóstico asistido por visión computacional, descubrimiento acelerado de fármacos, medicina personalizada basada en genómica y predicción de epidemias.
+                </p>
+              </div>
+              <div class="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-xl border-2 border-blue-300/50 dark:border-blue-500/30 card-hover">
+                <img src="4.png" alt="IA en Transporte" class="w-16 h-16 mb-3 mx-auto"/>
+                <h4 class="font-bold text-blue-600 dark:text-blue-400 mb-2 text-xl text-center">🚗 Transporte</h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Vehículos autónomos que prometen reducir accidentes, optimización logística en tiempo real, control de tráfico inteligente y reducción de emisiones.
+                </p>
+              </div>
+              <div class="p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl border-2 border-green-300/50 dark:border-green-500/30 card-hover">
+                <img src="5.png" alt="IA en Educación" class="w-16 h-16 mb-3 mx-auto"/>
+                <h4 class="font-bold text-green-600 dark:text-green-400 mb-2 text-xl text-center">📚 Educación</h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Tutoría personalizada adaptada al ritmo de cada estudiante, evaluación automatizada con retroalimentación inmediata y aprendizaje adaptativo inteligente.
+                </p>
+              </div>
+              <div class="p-6 bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-xl border-2 border-purple-300/50 dark:border-purple-500/30 card-hover">
+                <img src="6.png" alt="IA en Arte" class="w-16 h-16 mb-3 mx-auto"/>
+                <h4 class="font-bold text-purple-600 dark:text-purple-400 mb-2 text-xl text-center">🎨 Arte y Creatividad</h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Generación de música, imágenes fotorrealistas, textos creativos con IA generativa (DALL-E, Midjourney, ChatGPT) y colaboración humano-máquina en diseño.
+                </p>
+              </div>
+              <div class="p-6 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-xl border-2 border-orange-300/50 dark:border-orange-500/30 card-hover">
+                <img src="7.png" alt="IA en Industria" class="w-16 h-16 mb-3 mx-auto"/>
+                <h4 class="font-bold text-orange-600 dark:text-orange-400 mb-2 text-xl text-center">🏭 Industria</h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Mantenimiento predictivo que previene fallas costosas, robots colaborativos (cobots) que trabajan junto a humanos y optimización de cadenas de producción.
+                </p>
+              </div>
+              <div class="p-6 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-xl border-2 border-teal-300/50 dark:border-teal-500/30 card-hover">
+                <img src="8.png" alt="IA en Finanzas" class="w-16 h-16 mb-3 mx-auto"/>
+                <h4 class="font-bold text-teal-600 dark:text-teal-400 mb-2 text-xl text-center">💰 Finanzas</h4>
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Detección de fraude en tiempo real, trading algorítmico, evaluación automatizada de riesgos crediticios y asesores financieros virtuales (robo-advisors).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tendencias Futuras -->
+          <div class="p-8 rounded-xl bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 dark:from-primary/10 dark:via-primary/20 dark:to-primary/10 border-2 border-primary/30 flex flex-col md:flex-row gap-8 items-center glow-border card-hover">
+            <div class="md:w-1/4 flex-shrink-0">
+              <img src="9.png" alt="Futuro de la IA" class="w-full h-auto rounded-xl shadow-2xl border-4 border-primary/30"/>
+            </div>
+            <div class="md:w-3/4">
+              <h3 class="text-3xl font-bold text-primary mb-5 flex items-center">
+                <span class="material-symbols-outlined text-4xl mr-3">analytics</span>
+                D. Tendencias Futuras: Hacia la Inteligencia General
+              </h3>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
+                El horizonte de la IA se expande constantemente. Las próximas décadas prometen transformaciones que apenas podemos imaginar:
+              </p>
+              <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+                  <strong class="text-primary text-lg">IA Generativa Avanzada:</strong> Modelos multimodales capaces de crear contenido original de alta calidad (ChatGPT, Gemini, Claude, Stable Diffusion, DALL-E 3) que combinan texto, imagen, audio y video.
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+                  <strong class="text-primary text-lg">Automatización Cognitiva:</strong> Sistemas que toman decisiones complejas, se adaptan dinámicamente a contextos cambiantes y aprenden de forma continua sin intervención humana.
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+                  <strong class="text-primary text-lg">Interacción Natural y Empática:</strong> Interfaces conversacionales indistinguibles de humanos, robots sociales con inteligencia emocional y asistentes personales verdaderamente proactivos.
+                </li>
+                <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+                  <strong class="text-primary text-lg">IA General (AGI):</strong> El objetivo último: máquinas con capacidades cognitivas comparables o superiores a las humanas en todos los dominios, capaces de razonamiento abstracto y transferencia de conocimiento.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 2 -->
+        <section class="mb-20">
+          <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+            <span class="material-symbols-outlined text-primary align-middle mr-3 text-5xl">hub</span>
+            2. Enfoques Actuales de la Inteligencia Artificial
+          </h2>
+
+          <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-10 max-w-3xl mx-auto leading-relaxed">
+            La IA moderna se ha diversificado en múltiples enfoques, cada uno con sus fortalezas y aplicaciones específicas. La tendencia actual busca combinar lo mejor de cada paradigma:
+          </p>
+
+          <div class="space-y-8">
+            <!-- IA Simbólica -->
+            <div class="p-8 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border-2 border-gray-300/50 dark:border-gray-600/50 flex flex-col md:flex-row gap-8 items-center glow-border card-hover">
+              <div class="md:w-1/5 flex-shrink-0">
+                <img src="10.png" alt="IA Simbólica" class="w-full h-auto rounded-xl shadow-2xl border-4 border-gray-400/30"/>
+              </div>
+              <div class="md:w-4/5">
+                <h3 class="text-3xl font-bold text-primary mb-3 flex items-center">
+                  <span class="material-symbols-outlined text-4xl mr-3">schema</span>
+                  A. IA Simbólica (GOFAI - Good Old-Fashioned AI)
+                </h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Basada en la manipulación explícita de símbolos y reglas lógicas ("SI–ENTONCES"). Se centra en el razonamiento de sentido común, la representación formal del conocimiento y la inferencia deductiva.
+                </p>
+                <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                  Este enfoque dominó las primeras décadas de la IA (1956-1980s) y dio origen a sistemas expertos, motores de inferencia y lenguajes como LISP y Prolog. Aunque ha perdido popularidad, sigue siendo fundamental en áreas que requieren explicabilidad y razonamiento riguroso.
+                </p>
+                <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg">
+                  <p class="text-sm font-light italic text-gray-600 dark:text-gray-400">
+                    <strong>Ventajas:</strong> Explicabilidad total, razonamiento lógico riguroso, incorporación de conocimiento experto.<br>
+                    <strong>Limitaciones:</strong> Frágil ante ambigüedad, dificultad para escalar, incapaz de aprender de datos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- IA Basada en Datos -->
+            <div class="p-8 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-300/50 dark:border-blue-500/30 flex flex-col md:flex-row-reverse gap-8 items-center glow-border card-hover">
+              <div class="md:w-1/5 flex-shrink-0">
+                <img src="11.png" alt="Machine Learning" class="w-full h-auto rounded-xl shadow-2xl border-4 border-blue-400/30"/>
+              </div>
+              <div class="md:w-4/5">
+                <h3 class="text-3xl font-bold text-primary mb-3 flex items-center">
+                  <span class="material-symbols-outlined text-4xl mr-3">database</span>
+                  B. IA Basada en Datos (Machine Learning)
+                </h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  El sistema aprende directamente de grandes volúmenes de datos mediante algoritmos estadísticos y optimización matemática. A medida que se expone a más información, mejora automáticamente su precisión y capacidad predictiva.
+                </p>
+                <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                  Este paradigma revolucionó la IA en los años 90 y 2000, permitiendo que las máquinas descubran patrones complejos sin programación explícita. Actualmente domina aplicaciones comerciales de visión, lenguaje, recomendación y predicción.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="bg-green-100 dark:bg-green-900/30 p-4 rounded-lg border-l-4 border-green-500">
+                    <h4 class="font-bold text-green-700 dark:text-green-400 mb-2">Aprendizaje Supervisado</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Aprende de datos etiquetados (entrada-salida). Ejemplos: clasificación de imágenes, predicción de precios.</p>
+                  </div>
+                  <div class="bg-purple-100 dark:bg-purple-900/30 p-4 rounded-lg border-l-4 border-purple-500">
+                    <h4 class="font-bold text-purple-700 dark:text-purple-400 mb-2">Aprendizaje No Supervisado</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Descubre patrones ocultos en datos no etiquetados. Ejemplos: clustering, reducción dimensional.</p>
+                  </div>
+                  <div class="bg-orange-100 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                    <h4 class="font-bold text-orange-700 dark:text-orange-400 mb-2">Aprendizaje por Refuerzo</h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Aprende mediante prueba y error maximizando recompensas. Ejemplos: juegos, robótica, control.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Híbridos Neuro-Simbólicos -->
+            <div class="p-8 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300/50 dark:border-purple-500/30 flex flex-col md:flex-row gap-8 items-center glow-border card-hover">
+              <div class="md:w-1/5 flex-shrink-0">
+                <img src="12.png" alt="IA Híbrida" class="w-full h-auto rounded-xl shadow-2xl border-4 border-purple-400/30"/>
+              </div>
+              <div class="md:w-4/5">
+                <h3 class="text-3xl font-bold text-primary mb-3 flex items-center">
+                  <span class="material-symbols-outlined text-4xl mr-3">merge_type</span>
+                  C. Híbridos Neuro-Simbólicos
+                </h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Combina la lógica simbólica con las redes neuronales profundas, buscando sistemas interpretables, robustos y más cercanos al razonamiento humano. Intenta unir el aprendizaje estadístico con el razonamiento lógico.
+                </p>
+                <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                  Este enfoque emergente representa el futuro de la IA, uniendo lo mejor de ambos mundos: la capacidad de aprendizaje y generalización de las redes neuronales con la explicabilidad y estructura del razonamiento simbólico. Empresas como IBM, DeepMind y MIT están liderando esta investigación.
+                </p>
+                <div class="bg-purple-100 dark:bg-purple-900/30 p-4 rounded-lg">
+                  <p class="text-sm font-light italic text-gray-600 dark:text-gray-400">
+                    <strong>Aplicaciones prometedoras:</strong> Sistemas de diagnóstico médico explicables, razonamiento de sentido común en robots, comprensión de lenguaje con conocimiento del mundo, verificación formal de sistemas de IA.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- IA Cognitiva -->
+            <div class="p-8 rounded-xl bg-gradient-to-br from-teal-50 to-green-50 dark:from-teal-900/20 dark:to-green-900/20 border-2 border-teal-300/50 dark:border-teal-500/30 flex flex-col md:flex-row-reverse gap-8 items-center glow-border card-hover">
+              <div class="md:w-1/5 flex-shrink-0">
+                <img src="13.png" alt="IA Cognitiva" class="w-full h-auto rounded-xl shadow-2xl border-4 border-teal-400/30"/>
+              </div>
+              <div class="md:w-4/5">
+                <h3 class="text-3xl font-bold text-primary mb-3 flex items-center">
+                  <span class="material-symbols-outlined text-4xl mr-3">neurology</span>
+                  D. IA Cognitiva
+                </h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  Inspirada en el cerebro humano y las ciencias cognitivas, integra múltiples capacidades: percepción sensorial, memoria episódica, procesamiento de lenguaje natural, razonamiento abstracto y aprendizaje continuo para alcanzar una Inteligencia Artificial General (IAG).
+                </p>
+                <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                  Este es el objetivo más ambicioso y filosóficamente profundo: crear máquinas con capacidades cognitivas verdaderamente comparables a las humanas en múltiples dominios. Se aplica en robótica avanzada, sistemas multimodales (texto+imagen+audio) y asistentes personales sofisticados.
+                </p>
+                <div class="bg-teal-100 dark:bg-teal-900/30 p-4 rounded-lg">
+                  <p class="text-sm font-light italic text-gray-600 dark:text-gray-400">
+                    <strong>Características clave:</strong> Comprensión contextual profunda, razonamiento de sentido común, transferencia de conocimiento entre dominios, adaptación a situaciones novedosas, conciencia situacional y toma de decisiones bajo incertidumbre.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 3: Desafíos y Consideraciones Éticas -->
+        <section class="mb-20">
+          <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+            <span class="material-symbols-outlined text-primary align-middle mr-3 text-5xl">balance</span>
+            3. Desafíos Éticos y Sociales de la IA
+          </h2>
+
+          <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-10 max-w-3xl mx-auto leading-relaxed">
+            El desarrollo acelerado de la IA plantea desafíos éticos, sociales y filosóficos sin precedentes que la humanidad debe abordar con urgencia:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="p-6 bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-xl border-2 border-red-300/50 dark:border-red-500/30 card-hover">
+              <div class="flex items-center mb-4">
+                <span class="material-symbols-outlined text-4xl text-red-600 dark:text-red-400 mr-3">warning</span>
+                <h3 class="text-2xl font-bold text-red-700 dark:text-red-400">Sesgos Algorítmicos</h3>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Los sistemas de IA pueden perpetuar y amplificar sesgos humanos presentes en los datos de entrenamiento, llevando a discriminación sistémica en contratación, justicia criminal y acceso a servicios.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-xl border-2 border-blue-300/50 dark:border-blue-500/30 card-hover">
+              <div class="flex items-center mb-4">
+                <span class="material-symbols-outlined text-4xl text-blue-600 dark:text-blue-400 mr-3">privacy_tip</span>
+                <h3 class="text-2xl font-bold text-blue-700 dark:text-blue-400">Privacidad y Vigilancia</h3>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                La capacidad de la IA para analizar enormes cantidades de datos personales plantea riesgos de vigilancia masiva, erosión de la privacidad y control social sin precedentes.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/20 rounded-xl border-2 border-yellow-300/50 dark:border-yellow-500/30 card-hover">
+              <div class="flex items-center mb-4">
+                <span class="material-symbols-outlined text-4xl text-yellow-700 dark:text-yellow-400 mr-3">work</span>
+                <h3 class="text-2xl font-bold text-yellow-700 dark:text-yellow-400">Automatización Laboral</h3>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                La automatización impulsada por IA amenaza con desplazar millones de empleos, requiriendo una transformación profunda de la educación, capacitación y políticas sociales.
+              </p>
+            </div>
+
+            <div class="p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl border-2 border-purple-300/50 dark:border-purple-500/30 card-hover">
+              <div class="flex items-center mb-4">
+                <span class="material-symbols-outlined text-4xl text-purple-600 dark:text-purple-400 mr-3">gavel</span>
+                <h3 class="text-2xl font-bold text-purple-700 dark:text-purple-400">Responsabilidad Legal</h3>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                ¿Quién es responsable cuando un sistema autónomo causa daño? Los marcos legales actuales no están preparados para asignar responsabilidad en decisiones tomadas por IA.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cuadro de Referencias -->
+        <section class="bg-gradient-to-br from-primary/10 via-primary/20 to-primary/10 dark:from-primary/20 dark:via-primary/30 dark:to-primary/20 p-8 rounded-xl border-2 border-primary/50 glow-border">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center flex items-center justify-center">
+            <span class="material-symbols-outlined text-4xl mr-3 text-primary">menu_book</span>
+            Referencias Bibliográficas
+          </h2>
+          <ul class="text-gray-700 dark:text-gray-300 text-base space-y-4">
+            <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+              <strong>Bobadilla, J.</strong> (2020). <em>Machine Learning y Deep Learning: Usando Python, Scikit y Keras.</em> Ediciones de la U.
+            </li>
+            <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+              <strong>Crawford, K.</strong> (2021). <em>The Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence.</em> Yale University Press.
+            </li>
+            <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+              <strong>UNESCO, World Commission on the Ethics of Scientific Knowledge and Technology.</strong> (2019). <em>Preliminary study on the ethics of artificial intelligence.</em> Recuperado de 
+              <a href="https://unesdoc.unesco.org/ark:/48223/pf0000367823" target="_blank" class="text-primary underline hover:text-primary/80 font-semibold">https://unesdoc.unesco.org/ark:/48223/pf0000367823</a>
+            </li>
+            <li class="bg-white dark:bg-gray-800 p-4 rounded-lg border-l-4 border-primary">
+              <strong>Villagomez Palacios, A. H.</strong> (2025). <em>El impacto de la Inteligencia Artificial en la Sociedad: Una Revisión Sistemática de su Influencia en Ámbitos Sociales, Económicos y Tecnológicos.</em> 
+              Ciencia Latina Revista Científica Multidisciplinar, 9(1), 8150–8172. 
+              <a href="https://doi.org/10.37811/cl_rcm.v9i1.16468" target="_blank" class="text-primary underline hover:text-primary/80 font-semibold">https://doi.org/10.37811/cl_rcm.v9i1.16468</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-gradient-to-r from-primary/10 via-primary/20 to-primary/10 dark:from-primary/20 dark:via-primary/30 dark:to-primary/20 text-center py-8 border-t-2 border-primary/50 mt-12">
+      <div class="max-w-[960px] mx-auto px-4">
+        <p class="text-base md:text-lg text-gray-700 dark:text-gray-300 font-semibold mb-2">
+          Elaborado por: Juliano Cardona
+        </p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Administración mención Informática | C.I: 32.281.199
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
